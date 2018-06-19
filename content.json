@@ -1,0 +1,18 @@
+{
+	"Navigation": {
+		"Home": [],
+		"Services": [],
+		"Team": []
+	},
+	"Meta": {
+		"title": "Exoid Development",
+		"description": "Web development for the modern bay area business"
+	},
+	"Home": {
+        "headline": "Exoid Development",
+        "subheadline": "Grow your business"
+	},
+	"Services": {
+
+	}
+}

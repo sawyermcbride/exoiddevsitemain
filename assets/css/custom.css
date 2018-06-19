@@ -1,0 +1,28 @@
+/* red #D91E18*/
+/* midnight blue: #2c3e50*/
+/* Add here all your CSS customizations */
+a.active {
+    color:white;
+}
+.bg-image-main {
+    background-color: rgba(255,255,255,0.4);
+
+}
+
+.header-body:before {
+    /*background:rgba(255,255,255, 0.3);*/
+}
+/*opacity of menu when it goes below top of page*/
+html.sticky-header-active #header.header-semi-transparent .header-body:before {
+    opacity: 0.5;
+}
+
+/* color of active menu text and carrot*/
+html #header.header-semi-transparent .header-nav-main nav > ul > li > a.active {
+ color: white !important;
+}
+html #header.header-semi-transparent .header-nav-main nav > ul > li > a.active.dropdown-toggle:after {
+    border-color: rgba(255,255,255,0.8) transparent transparent transparent
+}
+
+/*colors of first box (right under bg image)*/ 
