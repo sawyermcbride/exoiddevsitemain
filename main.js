@@ -16,6 +16,7 @@ app.get('/', (req,res)=> {
 
 //regex checks if the url is a file request, if so it passes it onto the next middleware
 app.use((req, res, next) => {    
+    console.log(req.url);
     if(rgex.test(req.path.trim())) {
         next();
     } else {
@@ -23,7 +24,7 @@ app.use((req, res, next) => {
     }
 });
 
-app.use(express.static('assets'));
+app.use(express.static('./assets'));
 
 app.use( (err, req, res, next) => {
     console.log('err');
