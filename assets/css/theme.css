@@ -966,7 +966,6 @@ html:not(.sticky-header-active) #header.header-transparent-sticky-deactive.heade
 	}
 
 	#header .header-nav.header-nav-top-line nav > ul > li > a.active {
-		color: #CCC;
 		background: transparent;
 	}
 
@@ -1485,17 +1484,12 @@ html:not(.sticky-header-active) #header.header-transparent-sticky-deactive.heade
 	}
 
 	html #header.header-semi-transparent .header-nav-main nav > ul > li > a {
-		color: #FFF;
+		color: white;
 	}
 
 	html #header.header-semi-transparent .header-nav-main nav > ul > li > a.dropdown-toggle:after {
 		border-color: #FFF transparent transparent transparent;
 	}
-
-	html #header.header-semi-transparent .header-nav-main nav > ul > li > a.active {
-		color: #CCC;
-	}
-
 	html #header.header-semi-transparent .header-nav-main nav > ul > li > a.active.dropdown-toggle:after {
 		border-color: #CCC transparent transparent transparent;
 	}

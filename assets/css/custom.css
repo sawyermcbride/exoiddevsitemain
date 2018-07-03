@@ -1,1 +1,37 @@
 /* Add here all your CSS customizations */
+a.dropdown-item {
+    color:red;
+}
+li.main-nav>a.active:hover {
+    color: white;
+}
+li.main-nav>a.active:hover:before {
+    background:white;
+}
+li.main-nav>a:not(.active):hover {
+    color: white;
+}
+li.main-nav>a:not(.active):hover:before {
+    background:white;
+}
+html.sticky-header-active div.header-body:before {
+    background:#6C7A89 !important;
+    opacity: 0.8  !important;
+}
+.header-nav-main nav > ul > li > a.active {
+    color: white;
+}
+div.tp-bgimg {
+    filter: blur(3px);
+}
+a.hp-btn{
+    background: #0088cc;
+    border-color: #0088cc #0088cc #006699;
+    border-radius:8px;
+}
+
+.tp-caption.featured-label {
+    word-wrap: break-word !important;
+    width:90%;
+    margin: 0 auto;
+}

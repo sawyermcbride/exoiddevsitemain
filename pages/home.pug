@@ -56,21 +56,24 @@ html
                     .header-nav-main.header-nav-no-arrows.header-nav-main-square.header-nav-main-sub-effect-1
                       nav.collapse
                         ul#mainNav.nav.nav-pills
-                          li
-                            a.dropdown-item.active(href='index.html')
-                              | Home
-                          li.dropdown
-                            a.dropdown-item(href='#')
-                              | Features
-                          li.dropdown
-                            a.dropdown-item(href='#')
-                              | Pages
-                          li.dropdown
-                            a.dropdown-item(href='#')
-                              | Portfolio
-                          li.dropdown
-                            a.dropdown-item(href='#')
-                              | Contact Us
+                          each val in Navigation
+                            li.main-nav
+                              a.dropdown-item.active(href=val.href)= val.title
+                          //- li.main-nav
+                          //-   a.dropdown-item.active(href='index.html')
+                          //-     | Home
+                          //- li.main-nav
+                          //-   a.dropdown-item(href='#')
+                          //-     | Features
+                          //- li.main-nav
+                          //-   a.dropdown-item(href='#')
+                          //-     | Pages
+                          //- li.main-nav
+                          //-   a.dropdown-item(href='#')
+                          //-     | Portfolio
+                          //- li.main-nav
+                          //-   a.dropdown-item(href='#')
+                          //-     | Contact Us
                     button.btn.header-btn-collapse-nav(data-toggle='collapse', data-target='.header-nav-main nav')
                       i.fas.fa-bars
       .main(role='main')
@@ -79,8 +82,11 @@ html
             ul
               li(data-transition='fade')
                 img.rev-slidebg(src='img/golden-gate.jpg', class='bg-image-main', alt='', data-bgposition='center center', data-bgfit='cover', data-bgrepeat='no-repeat')
-                .tp-caption.featured-label(data-x='center', data-y='center', data-voffset='-45', data-start='500', data-fontsize="['52','52','52','62']", style='z-index: 5', data-transform_in='y:[100%];s:500;', data-transform_out='opacity:0;s:500;')= Home.headline
-                .tp-caption.bottom-label(data-x='center', data-y='center', data-voffset='5', data-start='1000', data-fontsize="['23','23','23','30']", data-transform_idle='o:1;', data-transform_in='y:[100%];z:0;rZ:-35deg;sX:1;sY:1;skX:0;skY:0;s:600;e:Power4.easeInOut;', data-transform_out='opacity:0;s:500;', data-mask_in='x:0px;y:0px;s:inherit;e:inherit;', data-splitin='chars', data-splitout='none', data-responsive_offset='on', style='font-size: 23px; line-height: 30px;', data-elementdelay='0.05')= Home.subheadline
+                h2.tp-caption.featured-label(data-x='center', data-y='center', data-voffset='-45', data-start='500', data-fontsize="['55','35','25','28']", style='z-index: 5', data-transform_in='y:[100%];s:500;', data-transform_out='opacity:0;s:500;')= Home.headline
+                .tp-caption.bottom-label(data-x='center', data-y='center', data-voffset='5', data-start='1000', data-fontsize="['30','20','18','16']", data-transform_idle='o:1;', data-transform_in='y:[100%];z:0;rZ:-35deg;sX:1;sY:1;skX:0;skY:0;s:600;e:Power4.easeInOut;', data-transform_out='opacity:0;s:500;', data-mask_in='x:0px;y:0px;s:inherit;e:inherit;', data-splitin='chars', data-splitout='none', data-responsive_offset='on', style='font-size: 28px; line-height: 30px;', data-elementdelay='0.01')= Home.subheadline
+                a.tp-caption.btn.btn-lg.btn-3d.mb-2.hp-btn.btn-primary.btn-slider-action(data-hash="", data-hash-offset="85", href="#home-intro", data-x="center", data-hoffset="0", data-y="center", data-voffset="80", data-start="2200", data-whitespace="nowrap", data-fontsize="['22','22','22','32']", data-transform_in="y:[100%];s:500;", data-transform_out="opacity:0;s:500;", style="z-index: 5", data-mask_in="x:0px;y:0px;") Get A Free Site Design
+
+
         #home-intro.home-intro.home-intro-primary
           .container
             .row.align-items-center

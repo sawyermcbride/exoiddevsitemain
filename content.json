@@ -1,18 +1,19 @@
 {
-	"Navigation": {
-		"Home": [],
-		"Services": [],
-		"Team": []
-	},
+	"Navigation": [
+		{"title":"Home", "href":"/", "active":"true"},
+		{"title":"About", "href":"/about", "active":"false"},
+		{"title":"Services", "href":"/services", "active":"false"},
+		{"title":"Portfolio", "href":"/portfolio", "active":"false"}
+	],
 	"Meta": {
-		"title": "Exoid Development",
-		"description": "Web development for the modern bay area business"
+		"title": "Custom Digital Development for the Modern Business",
+		"descripion": "We build custom sites for companies who want to grow their brands online and reach more customers digitally"
 	},
 	"Home": {
-        "headline": "Exoid Development",
-        "subheadline": "Grow your business"
+        "headline": "Custom Digital Development for the Modern Business",
+        "subheadline": "We build custom sites for companies who want to grow their brands online and reach more customers digitally "
 	},
 	"Services": {
-
+		"test":"1"
 	}
 }

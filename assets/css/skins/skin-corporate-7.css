@@ -3140,12 +3140,8 @@ html[dir="rtl"] #header .tip-light:before {
 		background-color: #5974a3;
 	}
 
-	#header .header-nav.header-nav-top-line nav > ul li > a.active {
-		color: #5974a3;
-	}
-
 	#header .header-nav.header-nav-top-line nav > ul li > a.active:before {
-		background: #5974a3;
+		background: white;
 	}
 
 	#header .header-nav.header-nav-top-line nav > ul li > a.active.dropdown-toggle:after {
@@ -3157,7 +3153,7 @@ html[dir="rtl"] #header .tip-light:before {
 	}
 
 	#header .header-nav.header-nav-top-line nav > ul li:hover > a:before {
-		background: #5974a3;
+		background: white;
 	}
 
 	#header .header-nav.header-nav-top-line nav > ul li:hover > a.dropdown-toggle:after {
@@ -3173,7 +3169,7 @@ html[dir="rtl"] #header .tip-light:before {
 	}
 
 	#header .header-nav.header-nav-dark-dropdown nav > ul li:hover > a {
-		color: #5974a3;
+		color: white;
 	}
 
 	#header .header-nav.header-nav-dark-dropdown nav > ul li:hover > a.dropdown-toggle:after {
@@ -3867,9 +3863,6 @@ html #header .header-top.header-top-light .dropdown-menu a:focus {
 		border-color: #5974a3 transparent transparent transparent;
 	}
 
-	html #header.header-semi-transparent .header-nav-main nav > ul > li > a.active {
-		color: #5974a3;
-	}
 
 	html #header.header-semi-transparent .header-nav-main nav > ul > li > a.active.dropdown-toggle:after {
 		border-color: #5974a3 transparent transparent transparent;
