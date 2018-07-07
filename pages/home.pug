@@ -23,6 +23,7 @@ html
     link(rel='stylesheet', href='/vendor/owl.carousel/assets/owl.carousel.min.css')
     link(rel='stylesheet', href='/vendor/owl.carousel/assets/owl.theme.default.min.css')
     link(rel='stylesheet', href='/vendor/magnific-popup/magnific-popup.min.css')
+    link(rel='stylesheet', href='/css/skins/skin-corporate-7.css')
     // Theme CSS
     link(rel='stylesheet', href='/css/theme.css')
     link(rel='stylesheet', href='/css/theme-elements.css')
@@ -34,7 +35,6 @@ html
     link(rel='stylesheet', href='/vendor/rs-plugin/css/navigation.css')
     // Demo CSS
     // Skin CSS
-    link(rel='stylesheet', href='/css/skins/skin-corporate-7.css')
     // Theme Custom CSS
     link(rel='stylesheet', href='/css/custom.css')
     // Head Libs
@@ -77,140 +77,90 @@ html
                     button.btn.header-btn-collapse-nav(data-toggle='collapse', data-target='.header-nav-main nav')
                       i.fas.fa-bars
       .main(role='main')
-        .slider-container.rev_slider_wrapper(style='height: 760px;')
-          #revolutionSlider.slider.rev_slider(data-version='5.4.7', data-plugin-revolution-slider='', data-plugin-options="{'delay': 9000, 'gridwidth': 800, 'gridheight': 760, 'responsiveLevels': [4096,1200,992,500]}")
-            ul
-              li(data-transition='fade')
-                img.rev-slidebg(src='img/golden-gate.jpg', class='bg-image-main', alt='', data-bgposition='center center', data-bgfit='cover', data-bgrepeat='no-repeat')
-                h2.tp-caption.featured-label(data-x='center', data-y='center', data-voffset='-45', data-start='500', data-fontsize="['55','35','25','28']", style='z-index: 5', data-transform_in='y:[100%];s:500;', data-transform_out='opacity:0;s:500;')= Home.headline
-                .tp-caption.bottom-label(data-x='center', data-y='center', data-voffset='5', data-start='1000', data-fontsize="['30','20','18','16']", data-transform_idle='o:1;', data-transform_in='y:[100%];z:0;rZ:-35deg;sX:1;sY:1;skX:0;skY:0;s:600;e:Power4.easeInOut;', data-transform_out='opacity:0;s:500;', data-mask_in='x:0px;y:0px;s:inherit;e:inherit;', data-splitin='chars', data-splitout='none', data-responsive_offset='on', style='font-size: 28px; line-height: 30px;', data-elementdelay='0.01')= Home.subheadline
-                a.tp-caption.btn.btn-lg.btn-3d.mb-2.hp-btn.btn-primary.btn-slider-action(data-hash="", data-hash-offset="85", href="#home-intro", data-x="center", data-hoffset="0", data-y="center", data-voffset="80", data-start="2200", data-whitespace="nowrap", data-fontsize="['22','22','22','32']", data-transform_in="y:[100%];s:500;", data-transform_out="opacity:0;s:500;", style="z-index: 5", data-mask_in="x:0px;y:0px;") Get A Free Site Design
-
-
-        #home-intro.home-intro.home-intro-primary
+        //- .slider-container.rev_slider_wrapper(style='height: 760px;')
+        section.section.section-secondary.section-first-home
+          .cover-overlay
           .container
-            .row.align-items-center
-              .col-lg-8
-                p
-                  | The fastest way to grow your business with the leader in 
-                  em.text-light Technology
-                  span.text-light Check out our options and features included.
-              .col-lg-4
-                .get-started.text-left.text-lg-right
-                  a.btn.btn-lg.btn-secondary.btn-intro-first(href='#') Get Started Now!
-                  .learn-more.text-light
-                    | or 
-                    a.text-light(href='index.html') learn more.
+            .row
+              .col
+                .heading.heading-border.heading-bottom-border
+                  h1=Home.headline_1 
+                    strong= " "+ Home.headline_highlight
+                    | #{" "+Home.headline_2} 
+                p.mb-0
+                  =Home.subheadline
+        section.call-to-action.call-to-action-primary.mb-5
+          .container
+            .row
+              .col-sm-9.col-lg-9
+                .call-to-action-content
+                  h3=Home.banner_header									
+                  p.mb-0=Home.banner_subheader
+              .col-sm-3.col-lg-3
+                .call-to-action-btn
+                  a.btn.btn-light.mb-2.btn-hp(href="http://themeforest.net/item/porto-responsive-html5-template/4106987", target="_blank") Get A Free New Site Preview 
+
         .container
+          .divider.divider-tertiary
+            i.fas.fa-chevron-down
           .row.mb-4
             .col-lg-12.text-center
               h2.mb-5
-                | Our 
-                strong Services
+                strong Development 
+                |Services
+                
             .col-lg-12
               .row.pt-2.clearfix
                 .col-lg-6
                   .feature-box.feature-box-style-2.reverse.appear-animation(data-appear-animation='fadeInLeft', data-appear-animation-delay='0')
                     .feature-box-icon
-                      i.icon-user-following.icons.text-color-quaternary
+                      i.icons.text-color-quaternary(class=Services[0].icon_class)
                     .feature-box-info
-                      h4.mb-2 Customer Support
-                      p.mb-4
-                        | Lorem ipsum dolor sit amet, consectetur adipiscing metus elit. Quisque rutrum pellentesque imperdiet.
+                      h4.mb-2= Services[0].title
+                      p.mb-4= Services[0].description
+
                 .col-lg-6
                   .feature-box.feature-box-style-2.appear-animation(data-appear-animation='fadeInRight', data-appear-animation-delay='0')
                     .feature-box-icon
-                      i.icon-layers.icons.text-color-quaternary
+                      i.icons.text-color-quaternary(class=Services[1].icon_class)
                     .feature-box-info
-                      h4.mb-2 Sliders
-                      p.mb-4
-                        | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque rutrum pellentesque imperdiet. Nulla lacinia iaculis nulla.
+                      h4.mb-2= Services[1].title
+                      p.mb-4= Services[1].description
+                        
               .row
                 .col-lg-6
                   .feature-box.feature-box-style-2.reverse.appear-animation(data-appear-animation='fadeInLeft', data-appear-animation-delay='300')
                     .feature-box-icon
-                      i.icon-calculator.icons.text-color-quaternary
+                      i.icons.text-color-quaternary(class=Services[2].icon_class)
                     .feature-box-info
-                      h4.mb-2 HTML5
-                      p.mb-4
-                        | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque rutrum pellentesque imperdiet. Nulla lacinia iaculis nulla.
+                      h4.mb-2= Services[2].title
+                      p.mb-4= Services[2].description
                 .col-lg-6
                   .feature-box.feature-box-style-2.appear-animation(data-appear-animation='fadeInRight', data-appear-animation-delay='300')
                     .feature-box-icon
-                      i.icon-star.icons.text-color-quaternary
+                      i.icons.text-color-quaternary(class=Services[3].icon_class)
                     .feature-box-info
-                      h4.mb-2 Icons
-                      p.mb-4
-                        | Lorem ipsum dolor sit amet, consectetur adipiscing metus elit. Quisque rutrum pellentesque imperdiet.
-              .row
-                .col-lg-6
-                  .feature-box.feature-box-style-2.reverse.appear-animation(data-appear-animation='fadeInLeft', data-appear-animation-delay='600')
-                    .feature-box-icon
-                      i.icon-drop.icons.text-color-quaternary
-                    .feature-box-info
-                      h4.mb-2 Colors
-                      p.mb-4
-                        | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque rutrum pellentesque imperdiet. Nulla lacinia iaculis nulla.
-                .col-lg-6
-                  .feature-box.feature-box-style-2.appear-animation(data-appear-animation='fadeInRight', data-appear-animation-delay='600')
-                    .feature-box-icon
-                      i.icon-mouse.icons.text-color-quaternary
-                    .feature-box-info
-                      h4.mb-2 Buttons
-                      p.mb-4
-                        | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque rutrum pellentesque imperdiet. Nulla lacinia iaculis nulla.
+                      h4.mb-2= Services[3].title
+                      p.mb-4= Services[3].description
             .col-lg-12.text-center.mt-5.mb-2
-              a.btn.btn-secondary.mr-1.mb-2.appear-animation(href='#', data-appear-animation='fadeInUp', data-appear-animation-delay='900') View More
-        section.section.section-tertiary.text-center.text-lg-left.pb-0.pb-lg-5.pb-xl-0.mb-0
+              a.btn.btn-primary.mr-1.mb-2.appear-animation(href='#', data-appear-animation='fadeInUp', data-appear-animation-delay='900') View More
+        section.section.section-primary.text-center.text-lg-left.pb-0.pb-lg-5.pb-xl-0.mb-0
           .container
             .row
               .col-lg-7
                 h2.text-light
-                  strong Who
-                  |  We Are
-                p.text-light
-                  | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pellentesque neque eget diam posuere porta. Quisque ut nulla at nunc  lacinia. Proin adipiscing porta tellus, ut feugiat nibh adipiscing sit amet. In eu justo a felis faucibus ornare vel id metus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In eu libero ligula.
+                  strong About
+                  |  Us
+                p.text-light= About.homepage
                 a.btn.btn-secondary.mt-4.mb-5.mb-lg-2(href='#') View More
               .col-lg-4.ml-auto.my-auto
                 img.img-fluid.appear-animation(src='img/porto-preview-1.jpg', alt='', data-appear-animation='fadeInUp')
-        section.section.section-background.section-center.mt-0(style='background-image: url(img/patterns/swirl_pattern.png);')
-          .container
-            .row.justify-content-center
-              .col-lg-10
-                h2.heading-dark.mt-5
-                  | Our 
-                  strong Clients
-                .owl-carousel.owl-theme.nav-bottom.rounded-nav(data-plugin-options="{'items': 1, 'loop': false}")
-                  div
-                    .col
-                      .testimonial.testimonial-style-2.testimonial-with-quotes.mb-0
-                        .testimonial-author
-                          img.img-fluid.rounded-circle(src='img/clients/client-1.jpg', alt='')
-                        blockquote
-                          p
-                            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget risus porta, tincidunt turpis at, interdum tortor. Suspendisse potenti. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce ante tellus, convallis non consectetur sed, pharetra nec ex.
-                        .testimonial-author
-                          p
-                            strong John Smith
-                            span CEO & Founder - Okler
-                  div
-                    .col
-                      .testimonial.testimonial-style-2.testimonial-with-quotes.mb-0
-                        .testimonial-author
-                          img.img-fluid.rounded-circle(src='img/clients/client-1.jpg', alt='')
-                        blockquote
-                          p
-                            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget risus porta, tincidunt turpis at, interdum tortor. Suspendisse potenti. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        .testimonial-author
-                          p
-                            strong John Smith
-                            span CEO & Founder - Okler
         .container
           .row
             .col-lg-12.text-center.mb-5
               h2.mt-5
                 | Our 
-                strong Brands
+                strong Projects
               .owl-carousel.owl-theme.mb-0(data-plugin-options="{'items': 4, 'margin': 0, 'loop': false}")
                 div
                   a(href='portfolio-single.html')
@@ -364,8 +314,8 @@ html
           .container
             .row
               .col-lg-1
-                a.logo(href='index.html')
-                  img.img-fluid(alt='Porto Website Template', src='img/logo-footer.png')
+                a.logo(href='/')
+                  img.img-fluid(alt='Exoid Development', src='img/exoid-dev-logo.png')
               .col-lg-7
                 p © Copyright 2018. All Rights Reserved.
               .col-lg-4
@@ -373,8 +323,6 @@ html
                   ul
                     li
                       a(href='page-faq.html') FAQ's
-                    li
-                      a(href='sitemap.html') Sitemap
                     li
                       a(href='contact-us.html') Contact
     // Vendor

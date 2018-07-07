@@ -15,23 +15,46 @@ li.main-nav>a:not(.active):hover:before {
     background:white;
 }
 html.sticky-header-active div.header-body:before {
-    background:#6C7A89 !important;
-    opacity: 0.8  !important;
+    background:#0088cc !important;
+    opacity: 0  !important;
 }
 .header-nav-main nav > ul > li > a.active {
     color: white;
 }
-div.tp-bgimg {
-    filter: blur(3px);
+.section-first-home{
+    margin-top:71px !important;
+    position: relative;
+    background-image: url(/img/golden-gate.jpg) !important;
+    opacity: 1;
+    background-size: cover !important;
+    background-position: 10% 40% !important;
+    background-repeat: no-repeat;
+    border-top:0px !important;
+    padding:150px 0px !important;
+    margin-bottom:0px !important;
 }
-a.hp-btn{
+.cover-overlay {
+    opacity:0.9;
     background: #0088cc;
-    border-color: #0088cc #0088cc #006699;
-    border-radius:8px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
-
-.tp-caption.featured-label {
-    word-wrap: break-word !important;
-    width:90%;
-    margin: 0 auto;
+html #header.header-semi-transparent .header-body, html #header.header-semi-transparent-light .header-body {
+    background:#0088cc;
+}
+html .call-to-action.call-to-action-primary {
+    background: #0088cc;
+}
+.section.section-primary {
+    background: #0088cc !important;
+    border-top: 4px solid #016496 !important;
+}
+.btn-hp {
+border-radius:5px;
+}
+.btn-primary {
+    background: #0088cc !important;
 }
