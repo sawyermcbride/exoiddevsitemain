@@ -9,6 +9,20 @@
 		"title": "Custom Digital Development for the Modern Business",
 		"descripion": "We build custom sites for companies who want to grow their brands online and reach more customers digitally"
 	},
+	"Pages": {
+		"Services": {
+			"title":"Services: Exoid Development",
+			"description":"Services"
+		},
+		"About_us": {
+			"title":"Services: Exoid Development",
+			"description":"Services"
+		},
+		"Portfolio": {
+			"title":"Services: Exoid Development",
+			"description":"Services"
+		}
+	},
 	"Home": {
 		"headline_1": "Web Development For the",
 		"headline_highlight": "Modern",

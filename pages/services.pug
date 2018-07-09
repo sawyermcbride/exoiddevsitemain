@@ -4,40 +4,44 @@ html
     // Basic
     meta(charset='utf-8')
     meta(http-equiv='X-UA-Compatible', content='IE=edge')
-    title =title+"| Services"
-    meta(name='keywords', content='Exoid Development')
-    meta(name='description', content='Web development for the modern bay area business')
-    meta(name='author', content='okler.net')
+    title= Pages.Services.title
+    meta(name='keywords', content='HTML5 Template')
+    meta(name='description', content=Pages.Services.description)
+    meta(name='author', content= "Sawyer McBride")
     // Favicon
     link(rel='shortcut icon', href='img/favicon.ico', type='image/x-icon')
     link(rel='apple-touch-icon', href='img/apple-touch-icon.png')
     // Mobile Metas
     meta(name='viewport', content='width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no')
-    // Web Fonts
+    // Web Fonts``
     link(href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800%7CShadows+Into+Light', rel='stylesheet', type='text/css')
     // Vendor CSS
-    link(rel='stylesheet', href='vendor/bootstrap/css/bootstrap.min.css')
-    link(rel='stylesheet', href='vendor/font-awesome/css/fontawesome-all.min.css')
-    link(rel='stylesheet', href='vendor/animate/animate.min.css')
-    link(rel='stylesheet', href='vendor/simple-line-icons/css/simple-line-icons.min.css')
-    link(rel='stylesheet', href='vendor/owl.carousel/assets/owl.carousel.min.css')
-    link(rel='stylesheet', href='vendor/owl.carousel/assets/owl.theme.default.min.css')
-    link(rel='stylesheet', href='vendor/magnific-popup/magnific-popup.min.css')
+    link(rel='stylesheet', href='/vendor/bootstrap/css/bootstrap.min.css')
+    link(rel='stylesheet', href='/vendor/font-awesome/css/fontawesome-all.min.css')
+    link(rel='stylesheet', href='/vendor/animate/animate.min.css')
+    link(rel='stylesheet', href='/vendor/simple-line-icons/css/simple-line-icons.min.css')
+    link(rel='stylesheet', href='/vendor/owl.carousel/assets/owl.carousel.min.css')
+    link(rel='stylesheet', href='/vendor/owl.carousel/assets/owl.theme.default.min.css')
+    link(rel='stylesheet', href='/vendor/magnific-popup/magnific-popup.min.css')
+    link(rel='stylesheet', href='/css/skins/skin-corporate-7.css')
     // Theme CSS
-    link(rel='stylesheet', href='css/theme.css')
-    link(rel='stylesheet', href='css/theme-elements.css')
-    link(rel='stylesheet', href='css/theme-blog.css')
-    link(rel='stylesheet', href='css/theme-shop.css')
+    link(rel='stylesheet', href='/css/theme.css')
+    link(rel='stylesheet', href='/css/theme-elements.css')
+    link(rel='stylesheet', href='/css/theme-blog.css')
+    link(rel='stylesheet', href='/css/theme-shop.css')
+    // Current Page CSS
+    link(rel='stylesheet', href='/vendor/rs-plugin/css/settings.css')
+    link(rel='stylesheet', href='/vendor/rs-plugin/css/layers.css')
+    link(rel='stylesheet', href='/vendor/rs-plugin/css/navigation.css')
     // Demo CSS
     // Skin CSS
-    link(rel='stylesheet', href='css/skins/default.css')
     // Theme Custom CSS
-    link(rel='stylesheet', href='css/custom.css')
+    link(rel='stylesheet', href='/css/custom.css')
     // Head Libs
     script(src='vendor/modernizr/modernizr.min.js')
   body
     .body
-      header#header.header-narrow.header-transparent.header-transparent-bottom-border
+      header#header.header-narrow.header-semi-transparent.header-transparent-sticky-deactive.header-transparent-bottom-border(data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': true, 'stickyStartAt': 1, 'stickySetTop': '1'}")
         .header-body
           .header-container.container
             .header-row
@@ -45,707 +49,213 @@ html
                 .header-row
                   .header-logo
                     a(href='index.html')
-                      img(alt='Porto', width='82', height='40', src='img/logo-default-slim.png')
+                      img(alt='Porto', width='145', height='52', src='img/exoid-dev-logo.png')
               .header-column.justify-content-end
                 .header-row
-                  .header-nav.header-nav-stripe
-                    .header-nav-main.header-nav-main-square.header-nav-main-effect-2.header-nav-main-sub-effect-1
+                  .header-nav.header-nav-top-line
+                    .header-nav-main.header-nav-no-arrows.header-nav-main-square.header-nav-main-sub-effect-1
                       nav.collapse
                         ul#mainNav.nav.nav-pills
-                          li.dropdown
-                            a.dropdown-item.dropdown-toggle(href='index.html')
-                              | Home
-                            ul.dropdown-menu
-                              li
-                                a.dropdown-item(href='index.html')
-                                  | Landing Page
-                              li.dropdown-submenu
-                                a.dropdown-item(href='index-classic.html') Classic
-                                ul.dropdown-menu
-                                  li
-                                    a.dropdown-item(href='index-classic.html', data-thumb-preview='img/previews/preview-classic.jpg') Classic - Original
-                                  li
-                                    a.dropdown-item(href='index-classic-color.html', data-thumb-preview='img/previews/preview-classic-color.jpg') Classic - Color
-                                  li
-                                    a.dropdown-item(href='index-classic-light.html', data-thumb-preview='img/previews/preview-classic-light.jpg') Classic - Light
-                                  li
-                                    a.dropdown-item(href='index-classic-video.html', data-thumb-preview='img/previews/preview-classic-video.jpg') Classic - Video
-                                  li
-                                    a.dropdown-item(href='index-classic-video-light.html', data-thumb-preview='img/previews/preview-classic-video-light.jpg') Classic - Video - Light
-                              li.dropdown-submenu
-                                a.dropdown-item(href='index-corporate.html')
-                                  | Corporate 
-                                  span.tip.tip-dark hot
-                                ul.dropdown-menu
-                                  li
-                                    a.dropdown-item(href='index-corporate.html', data-thumb-preview='img/previews/preview-corporate.jpg') Corporate - Version 1
-                                  li
-                                    a.dropdown-item(href='index-corporate-2.html', data-thumb-preview='img/previews/preview-corporate-version2.jpg') Corporate - Version 2
-                                  li
-                                    a.dropdown-item(href='index-corporate-3.html', data-thumb-preview='img/previews/preview-corporate-version3.jpg') Corporate - Version 3
-                                  li
-                                    a.dropdown-item(href='index-corporate-4.html', data-thumb-preview='img/previews/preview-corporate-version4.jpg') Corporate - Version 4
-                                  li
-                                    a.dropdown-item(href='index-corporate-5.html', data-thumb-preview='img/previews/preview-corporate-version5.jpg') Corporate - Version 5
-                                  li
-                                    a.dropdown-item(href='index-corporate-6.html', data-thumb-preview='img/previews/preview-corporate-version6.jpg') Corporate - Version 6
-                                  li
-                                    a.dropdown-item(href='index-corporate-7.html', data-thumb-preview='img/previews/preview-corporate-version7.jpg') Corporate - Version 7
-                                  li
-                                    a.dropdown-item(href='index-corporate-8.html', data-thumb-preview='img/previews/preview-corporate-version8.jpg') Corporate - Version 8
-                                  li
-                                    a.dropdown-item(href='index-corporate-hosting.html', data-thumb-preview='img/previews/preview-corporate-hosting.jpg') Corporate - Hosting
-                              li.dropdown-submenu
-                                a.dropdown-item(href='#') One Page
-                                ul.dropdown-menu
-                                  li
-                                    a.dropdown-item(href='index-one-page.html', data-thumb-preview='img/previews/preview-one-page.jpg') One Page Original
-                          li.dropdown.dropdown-mega
-                            a.dropdown-item.dropdown-toggle(href='#')
-                              | Shortcodes
-                            ul.dropdown-menu
-                              li
-                                .dropdown-mega-content
-                                  .row
-                                    .col-lg-3
-                                      span.dropdown-mega-sub-title Shortcodes 1
-                                      ul.dropdown-mega-sub-nav
-                                        li
-                                          a.dropdown-item(href='shortcodes-accordions.html') Accordions
-                                        li
-                                          a.dropdown-item(href='shortcodes-toggles.html') Toggles
-                                        li
-                                          a.dropdown-item(href='shortcodes-tabs.html') Tabs
-                                        li
-                                          a.dropdown-item(href='shortcodes-icons.html') Icons
-                                        li
-                                          a.dropdown-item(href='shortcodes-icon-boxes.html') Icon Boxes
-                                        li
-                                          a.dropdown-item(href='shortcodes-carousels.html') Carousels
-                                        li
-                                          a.dropdown-item(href='shortcodes-modals.html') Modals
-                                        li
-                                          a.dropdown-item(href='shortcodes-lightboxes.html') Lightboxes
-                                    .col-lg-3
-                                      span.dropdown-mega-sub-title Shortcodes 2
-                                      ul.dropdown-mega-sub-nav
-                                        li
-                                          a.dropdown-item(href='shortcodes-buttons.html') Buttons
-                                        li
-                                          a.dropdown-item(href='shortcodes-badges.html') Badges
-                                        li
-                                          a.dropdown-item(href='shortcodes-lists.html') Lists
-                                        li
-                                          a.dropdown-item(href='shortcodes-image-gallery.html') Image Gallery
-                                        li
-                                          a.dropdown-item(href='shortcodes-image-frames.html') Image Frames
-                                        li
-                                          a.dropdown-item(href='shortcodes-testimonials.html') Testimonials
-                                        li
-                                          a.dropdown-item(href='shortcodes-blockquotes.html') Blockquotes
-                                        li
-                                          a.dropdown-item(href='shortcodes-word-rotator.html') Word Rotator
-                                    .col-lg-3
-                                      span.dropdown-mega-sub-title Shortcodes 3
-                                      ul.dropdown-mega-sub-nav
-                                        li
-                                          a.dropdown-item(href='shortcodes-call-to-action.html') Call to Action
-                                        li
-                                          a.dropdown-item(href='shortcodes-pricing-tables.html') Pricing Tables
-                                        li
-                                          a.dropdown-item(href='shortcodes-tables.html') Tables
-                                        li
-                                          a.dropdown-item(href='shortcodes-progressbars.html') Progress Bars
-                                        li
-                                          a.dropdown-item(href='shortcodes-counters.html') Counters
-                                        li
-                                          a.dropdown-item(href='shortcodes-sections-parallax.html') Sections & Parallax
-                                        li
-                                          a.dropdown-item(href='shortcodes-tooltips-popovers.html') Tooltips & Popovers
-                                        li
-                                          a.dropdown-item(href='shortcodes-sticky-elements.html') Sticky Elements
-                                    .col-lg-3
-                                      span.dropdown-mega-sub-title Shortcodes 4
-                                      ul.dropdown-mega-sub-nav
-                                        li
-                                          a.dropdown-item(href='shortcodes-headings.html') Headings
-                                        li
-                                          a.dropdown-item(href='shortcodes-dividers.html') Dividers
-                                        li
-                                          a.dropdown-item(href='shortcodes-animations.html') Animations
-                                        li
-                                          a.dropdown-item(href='shortcodes-medias.html') Medias
-                                        li
-                                          a.dropdown-item(href='shortcodes-maps.html') Maps
-                                        li
-                                          a.dropdown-item(href='shortcodes-arrows.html') Arrows
-                                        li
-                                          a.dropdown-item(href='shortcodes-alerts.html') Alerts
-                                        li
-                                          a.dropdown-item(href='shortcodes-posts.html') Posts
-                          li.dropdown
-                            a.dropdown-item.dropdown-toggle.active(href='#')
-                              | Features
-                            ul.dropdown-menu
-                              li.dropdown-submenu
-                                a.dropdown-item(href='#') Headers
-                                ul.dropdown-menu
-                                  li.dropdown-submenu
-                                    a.dropdown-item(href='#') Default
-                                    ul.dropdown-menu
-                                      li
-                                        a.dropdown-item(href='index-classic.html') Default
-                                      li
-                                        a.dropdown-item(href='index-header-language-dropdown.html') Default + Language Dropdown
-                                      li
-                                        a.dropdown-item(href='index-header-big-logo.html') Default + Big Logo
-                                  li.dropdown-submenu
-                                    a.dropdown-item(href='#') Flat
-                                    ul.dropdown-menu
-                                      li
-                                        a.dropdown-item(href='index-header-flat.html') Flat
-                                      li
-                                        a.dropdown-item(href='index-header-flat-top-bar.html') Flat + Top Bar
-                                      li
-                                        a.dropdown-item(href='index-header-flat-colored-top-bar.html') Flat + Colored Top Bar
-                                      li
-                                        a.dropdown-item(href='index-header-flat-top-bar-search.html') Flat + Top Bar with Search
-                                  li
-                                    a.dropdown-item(href='index-header-center.html') Center
-                                  li
-                                    a.dropdown-item(href='index-header-below-slider.html') Below Slider
-                                  li
-                                    a.dropdown-item(href='index-header-full-video.html') Full Video
-                                  li
-                                    a.dropdown-item(href='index-header-narrow.html') Narrow
-                                  li
-                                    a.dropdown-item(href='index-header-always-sticky.html') Always Sticky
-                                  li.dropdown-submenu
-                                    a.dropdown-item(href='#') Transparent
-                                    ul.dropdown-menu
-                                      li
-                                        a.dropdown-item(href='index-header-transparent.html') Transparent
-                                      li
-                                        a.dropdown-item(href='index-header-transparent-bottom-border.html') Transparent - Bottom Border
-                                      li
-                                        a.dropdown-item(href='index-header-semi-transparent.html') Semi Transparent
-                                      li
-                                        a.dropdown-item(href='index-header-semi-transparent-light.html') Semi Transparent - Light
-                                  li
-                                    a.dropdown-item(href='index-header-full-width.html') Full-Width
-                                  li.dropdown-submenu
-                                    a.dropdown-item(href='#') Navbar
-                                    ul.dropdown-menu
-                                      li
-                                        a.dropdown-item(href='index-header-navbar.html') Navbar
-                                      li
-                                        a.dropdown-item(href='index-header-navbar-extra-info.html') Navbar + Extra Info
-                                  li.dropdown-submenu
-                                    a.dropdown-item(href='#') Side Header
-                                    ul.dropdown-menu
-                                      li
-                                        a.dropdown-item(href='index-header-side-header-left.html') Side Header Left
-                                      li
-                                        a.dropdown-item(href='index-header-side-header-right.html') Side Header Right
-                                      li
-                                        a.dropdown-item(href='index-header-side-header-semi-transparent.html') Side Header Semi Transparent
-                                  li
-                                    a.dropdown-item(href='index-header-signin.html') Sign In / Sign Up
-                                  li
-                                    a.dropdown-item(href='index-header-logged.html') Logged
-                              li.dropdown-submenu
-                                a.dropdown-item(href='#') Navigations
-                                ul.dropdown-menu
-                                  li
-                                    a.dropdown-item(href='index-classic.html') Default
-                                  li
-                                    a.dropdown-item(href='index-navigation-stripe.html') Stripe
-                                  li
-                                    a.dropdown-item(href='index-navigation-top-line.html') Top Line
-                                  li
-                                    a.dropdown-item(href='index-navigation-dark-dropdown.html') Dark Dropdown
-                                  li
-                                    a.dropdown-item(href='index-navigation-colors.html') Colors
-                              li.dropdown-submenu
-                                a.dropdown-item(href='#') Footers
-                                ul.dropdown-menu
-                                  li
-                                    a.dropdown-item(href='index-classic.html#footer') Default
-                                  li
-                                    a.dropdown-item(href='index-footer-advanced.html#footer') Advanced
-                                  li
-                                    a.dropdown-item(href='index-footer-simple.html#footer') Simple
-                                  li
-                                    a.dropdown-item(href='index-footer-light.html#footer') Light
-                                  li
-                                    a.dropdown-item(href='index-footer-light-narrow.html#footer') Light Narrow
-                                  li.dropdown-submenu
-                                    a.dropdown-item(href='#') Colors
-                                    ul.dropdown-menu
-                                      li
-                                        a.dropdown-item(href='index-footer-color-primary.html#footer') Primary Color
-                                      li
-                                        a.dropdown-item(href='index-footer-color-secondary.html#footer') Secondary Color
-                                      li
-                                        a.dropdown-item(href='index-footer-color-tertiary.html#footer') Tertiary Color
-                                      li
-                                        a.dropdown-item(href='index-footer-color-quaternary.html#footer') Quaternary Color
-                                  li
-                                    a.dropdown-item(href='index-footer-latest-work.html#footer') Latest Work
-                                  li
-                                    a.dropdown-item(href='index-footer-contact-form.html#footer') Contact Form
-                                  li
-                                    a.dropdown-item(href='index-footer-reveal.html#footer-reveal-anchor') Reveal
-                              li.dropdown-submenu
-                                a.dropdown-item(href='#') Page Headers
-                                ul.dropdown-menu
-                                  li
-                                    a.dropdown-item(href='index-page-header-default.html') Default
-                                  li.dropdown-submenu
-                                    a.dropdown-item(href='#') Colors
-                                    ul.dropdown-menu
-                                      li
-                                        a.dropdown-item(href='index-page-header-color-primary.html') Primary Color
-                                      li
-                                        a.dropdown-item(href='index-page-header-color-secondary.html') Secondary Color
-                                      li
-                                        a.dropdown-item(href='index-page-header-color-tertiary.html') Tertiary Color
-                                      li
-                                        a.dropdown-item(href='index-page-header-color-quaternary.html') Quaternary Color
-                                  li
-                                    a.dropdown-item(href='index-page-header-light.html') Light
-                                  li
-                                    a.dropdown-item(href='index-page-header-light-reverse.html') Light - Reverse
-                                  li
-                                    a.dropdown-item(href='index-page-header-custom-background.html') Custom Background
-                                  li
-                                    a.dropdown-item(href='index-page-header-parallax.html') Parallax
-                                  li
-                                    a.dropdown-item(href='index-page-header-center.html') Center
-                              li.dropdown-submenu
-                                a.dropdown-item(href='#')
-                                  | Admin Extension 
-                                  span.tip.tip-dark hot
-                                  em.not-included (Not Included)
-                                ul.dropdown-menu
-                                  li
-                                    a.dropdown-item(href='feature-admin-forms-basic.html') Forms Basic
-                                  li
-                                    a.dropdown-item(href='feature-admin-forms-advanced.html') Forms Advanced
-                                  li
-                                    a.dropdown-item(href='feature-admin-forms-wizard.html') Forms Wizard
-                                  li
-                                    a.dropdown-item(href='feature-admin-forms-code-editor.html') Code Editor
-                                  li
-                                    a.dropdown-item(href='feature-admin-tables-advanced.html') Tables Advanced
-                                  li
-                                    a.dropdown-item(href='feature-admin-tables-responsive.html') Tables Responsive
-                                  li
-                                    a.dropdown-item(href='feature-admin-tables-editable.html') Tables Editable
-                                  li
-                                    a.dropdown-item(href='feature-admin-tables-ajax.html') Tables Ajax
-                                  li
-                                    a.dropdown-item(href='feature-admin-charts.html') Charts
-                              li.dropdown-submenu
-                                a.dropdown-item(href='#') Sliders
-                                ul.dropdown-menu
-                                  li
-                                    a.dropdown-item(href='index-classic.html') Revolution Slider
-                                  li
-                                    a.dropdown-item(href='index-slider-nivo.html') Nivo Slider
-                              li.dropdown-submenu
-                                a.dropdown-item(href='#') Layout Options
-                                ul.dropdown-menu
-                                  li
-                                    a.dropdown-item(href='feature-layout-boxed.html') Boxed
-                                  li
-                                    a.dropdown-item(href='feature-layout-dark.html') Dark
-                                  li
-                                    a.dropdown-item(href='feature-layout-rtl.html') RTL
-                              li.dropdown-submenu
-                                a.dropdown-item(href='#') Extra
-                                ul.dropdown-menu
-                                  li
-                                    a.dropdown-item(href='feature-typography.html') Typography
-                                  li
-                                    a.dropdown-item(href='feature-grid-system.html') Grid System
-                                  li
-                                    a.dropdown-item(href='feature-page-loading.html') Page Loading
-                                  li
-                                    a.dropdown-item(href='feature-lazy-load.html') Lazy Load
-                          li.dropdown
-                            a.dropdown-item.dropdown-toggle(href='#')
-                              | Pages
-                            ul.dropdown-menu
-                              li.dropdown-submenu
-                                a.dropdown-item(href='#') About Us
-                                ul.dropdown-menu
-                                  li
-                                    a.dropdown-item(href='about-us.html') About Us
-                                  li
-                                    a.dropdown-item(href='about-us-basic.html') About Us - Basic
-                                  li
-                                    a.dropdown-item(href='about-me.html') About Me
-                              li.dropdown-submenu
-                                a.dropdown-item(href='#') Shop
-                                ul.dropdown-menu
-                                  li
-                                    a.dropdown-item(href='shop-full-width.html') Shop - Full Width
-                                  li
-                                    a.dropdown-item(href='shop-sidebar.html') Shop - Sidebar
-                                  li
-                                    a.dropdown-item(href='shop-product-full-width.html') Shop - Product Full Width
-                                  li
-                                    a.dropdown-item(href='shop-product-sidebar.html') Shop - Product Sidebar
-                                  li
-                                    a.dropdown-item(href='shop-cart.html') Shop - Cart
-                                  li
-                                    a.dropdown-item(href='shop-login.html') Shop - Login
-                                  li
-                                    a.dropdown-item(href='shop-checkout.html') Shop - Checkout
-                              li.dropdown-submenu
-                                a.dropdown-item(href='#') Blog
-                                ul.dropdown-menu
-                                  li
-                                    a.dropdown-item(href='blog-full-width.html') Blog Full Width
-                                  li
-                                    a.dropdown-item(href='blog-large-image.html') Blog Large Image
-                                  li
-                                    a.dropdown-item(href='blog-medium-image.html') Blog Medium Image
-                                  li
-                                    a.dropdown-item(href='blog-timeline.html') Blog Timeline
-                                  li
-                                    a.dropdown-item(href='blog-post.html') Single Post
-                              li.dropdown-submenu
-                                a.dropdown-item(href='#') Layouts
-                                ul.dropdown-menu
-                                  li
-                                    a.dropdown-item(href='page-full-width.html') Full Width
-                                  li
-                                    a.dropdown-item(href='page-left-sidebar.html') Left Sidebar
-                                  li
-                                    a.dropdown-item(href='page-right-sidebar.html') Right Sidebar
-                                  li
-                                    a.dropdown-item(href='page-left-and-right-sidebars.html') Left and Right Sidebars
-                                  li
-                                    a.dropdown-item(href='page-sticky-sidebar.html') Sticky Sidebar
-                                  li
-                                    a.dropdown-item(href='page-secondary-navbar.html') Secondary Navbar
-                              li.dropdown-submenu
-                                a.dropdown-item(href='#') Extra
-                                ul.dropdown-menu
-                                  li
-                                    a.dropdown-item(href='page-404.html') 404 Error
-                                  li
-                                    a.dropdown-item(href='page-coming-soon.html') Coming Soon
-                                  li
-                                    a.dropdown-item(href='page-maintenance-mode.html') Maintenance Mode
-                                  li
-                                    a.dropdown-item(href='sitemap.html') Sitemap
-                              li
-                                a.dropdown-item(href='page-custom-header.html') Custom Header
-                              li
-                                a.dropdown-item(href='page-team.html') Team
-                              li
-                                a.dropdown-item(href='page-services.html') Services
-                              li
-                                a.dropdown-item(href='page-careers.html') Careers
-                              li
-                                a.dropdown-item(href='page-our-office.html') Our Office
-                              li
-                                a.dropdown-item(href='page-faq.html') FAQ
-                              li
-                                a.dropdown-item(href='page-login.html') Login / Register
-                          li.dropdown
-                            a.dropdown-item.dropdown-toggle(href='#')
-                              | Portfolio
-                            ul.dropdown-menu
-                              li.dropdown-submenu
-                                a.dropdown-item(href='#') Single Project
-                                ul.dropdown-menu
-                                  li
-                                    a.dropdown-item(href='portfolio-single-small-slider.html') Small Slider
-                                  li
-                                    a.dropdown-item(href='portfolio-single-wide-slider.html') Wide Slider
-                                  li
-                                    a.dropdown-item(href='portfolio-single-full-width-slider.html') Full Width Slider
-                                  li
-                                    a.dropdown-item(href='portfolio-single-gallery.html') Gallery
-                                  li
-                                    a.dropdown-item(href='portfolio-single-carousel.html') Carousel
-                                  li
-                                    a.dropdown-item(href='portfolio-single-medias.html') Medias
-                                  li
-                                    a.dropdown-item(href='portfolio-single-full-width-video.html') Full Width Video
-                                  li
-                                    a.dropdown-item(href='portfolio-single-masonry-images.html') Masonry Images
-                                  li
-                                    a.dropdown-item(href='portfolio-single-left-sidebar.html') Left Sidebar
-                                  li
-                                    a.dropdown-item(href='portfolio-single-right-sidebar.html') Right Sidebar
-                                  li
-                                    a.dropdown-item(href='portfolio-single-left-and-right-sidebars.html') Left and Right Sidebars
-                                  li
-                                    a.dropdown-item(href='portfolio-single-sticky-sidebar.html') Sticky Sidebar
-                                  li
-                                    a.dropdown-item(href='portfolio-single-extended.html') Extended
-                              li.dropdown-submenu
-                                a.dropdown-item(href='#') Grid Layouts
-                                ul.dropdown-menu
-                                  li
-                                    a.dropdown-item(href='portfolio-grid-1-column.html') 1 Column
-                                  li
-                                    a.dropdown-item(href='portfolio-grid-2-columns.html') 2 Columns
-                                  li
-                                    a.dropdown-item(href='portfolio-grid-3-columns.html') 3 Columns
-                                  li
-                                    a.dropdown-item(href='portfolio-grid-4-columns.html') 4 Columns
-                                  li
-                                    a.dropdown-item(href='portfolio-grid-5-columns.html') 5 Columns
-                                  li
-                                    a.dropdown-item(href='portfolio-grid-6-columns.html') 6 Columns
-                                  li
-                                    a.dropdown-item(href='portfolio-grid-no-margins.html') No Margins
-                                  li
-                                    a.dropdown-item(href='portfolio-grid-full-width.html') Full Width
-                                  li
-                                    a.dropdown-item(href='portfolio-grid-full-width-no-margins.html') Full Width No Margins
-                                  li
-                                    a.dropdown-item(href='portfolio-grid-1-column-title-and-description.html') Title and Description
-                              li.dropdown-submenu
-                                a.dropdown-item(href='#') Masonry Layouts
-                                ul.dropdown-menu
-                                  li
-                                    a.dropdown-item(href='portfolio-masonry-2-columns.html') 2 Columns
-                                  li
-                                    a.dropdown-item(href='portfolio-masonry-3-columns.html') 3 Columns
-                                  li
-                                    a.dropdown-item(href='portfolio-masonry-4-columns.html') 4 Columns
-                                  li
-                                    a.dropdown-item(href='portfolio-masonry-5-columns.html') 5 Columns
-                                  li
-                                    a.dropdown-item(href='portfolio-masonry-6-columns.html') 6 Columns
-                                  li
-                                    a.dropdown-item(href='portfolio-masonry-no-margins.html') No Margins
-                                  li
-                                    a.dropdown-item(href='portfolio-masonry-full-width.html') Full Width
-                              li.dropdown-submenu
-                                a.dropdown-item(href='#') Sidebar Layouts
-                                ul.dropdown-menu
-                                  li
-                                    a.dropdown-item(href='portfolio-sidebar-left.html') Left Sidebar
-                                  li
-                                    a.dropdown-item(href='portfolio-sidebar-right.html') Right Sidebar
-                                  li
-                                    a.dropdown-item(href='portfolio-sidebar-left-and-right.html') Left and Right Sidebars
-                                  li
-                                    a.dropdown-item(href='portfolio-sidebar-sticky.html') Sticky Sidebar
-                              li.dropdown-submenu
-                                a.dropdown-item(href='#') Ajax
-                                ul.dropdown-menu
-                                  li
-                                    a.dropdown-item(href='portfolio-ajax-page.html') Ajax on Page
-                                  li
-                                    a.dropdown-item(href='portfolio-ajax-modal.html') Ajax on Modal
-                              li.dropdown-submenu
-                                a.dropdown-item(href='#') Extra
-                                ul.dropdown-menu
-                                  li
-                                    a.dropdown-item(href='portfolio-extra-timeline.html') Timeline
-                                  li
-                                    a.dropdown-item(href='portfolio-extra-lightbox.html') Lightbox
-                                  li
-                                    a.dropdown-item(href='portfolio-extra-load-more.html') Load More
-                                  li
-                                    a.dropdown-item(href='portfolio-extra-infinite-scroll.html') Infinite Scroll
-                                  li
-                                    a.dropdown-item(href='portfolio-extra-pagination.html') Pagination
-                                  li
-                                    a.dropdown-item(href='portfolio-extra-combination-filters.html') Combination Filters
-                          li.dropdown
-                            a.dropdown-item.dropdown-toggle(href='#')
-                              | Contact Us
-                            ul.dropdown-menu
-                              li
-                                a.dropdown-item(href='contact-us.html') Contact Us - Basic
-                              li
-                                a.dropdown-item(href='contact-us-advanced.php') Contact Us - Advanced
-                    ul.header-social-icons.social-icons.d-none.d-sm-block
-                      li.social-icons-facebook
-                        a(href='http://www.facebook.com/', target='_blank', title='Facebook')
-                          i.fab.fa-facebook-f
-                      li.social-icons-twitter
-                        a(href='http://www.twitter.com/', target='_blank', title='Twitter')
-                          i.fab.fa-twitter
-                      li.social-icons-linkedin
-                        a(href='http://www.linkedin.com/', target='_blank', title='Linkedin')
-                          i.fab.fa-linkedin-in
+                          each val in Navigation
+                            li.main-nav
+                              a.dropdown-item.active(href=val.href)= val.title
+                          //- li.main-nav
+                          //-   a.dropdown-item.active(href='index.html')
+                          //-     | Home
+                          //- li.main-nav
+                          //-   a.dropdown-item(href='#')
+                          //-     | Features
+                          //- li.main-nav
+                          //-   a.dropdown-item(href='#')
+                          //-     | Pages
+                          //- li.main-nav
+                          //-   a.dropdown-item(href='#')
+                          //-     | Portfolio
+                          //- li.main-nav
+                          //-   a.dropdown-item(href='#')
+                          //-     | Contact Us
                     button.btn.header-btn-collapse-nav(data-toggle='collapse', data-target='.header-nav-main nav')
                       i.fas.fa-bars
       .main(role='main')
-        section.page-header
+        //- .slider-container.rev_slider_wrapper(style='height: 760px;')
+        section.section.section-secondary.section-first-home
+          .cover-overlay
           .container
             .row
               .col
-                ul.breadcrumb
-                  li
-                    a(href='#') Home
-                  li.active Pages
+                .heading.heading-border.heading-bottom-border
+                  h1=Home.headline_1 
+                    strong= " "+ Home.headline_highlight
+                    | #{" "+Home.headline_2} 
+                p.mb-0
+                  =Home.subheadline
+        section.call-to-action.call-to-action-primary.mb-5
+          .container
             .row
-              .col
-                h1 Services
+              .col-sm-9.col-lg-9
+                .call-to-action-content
+                  h3=Home.banner_header									
+                  p.mb-0=Home.banner_subheader
+              .col-sm-3.col-lg-3
+                .call-to-action-btn
+                  a.btn.btn-light.mb-2.btn-hp(href="http://themeforest.net/item/porto-responsive-html5-template/4106987", target="_blank") Get A Free New Site Preview 
+
         .container
-          h2
-            | Our 
-            strong Services
-          .row.align-items-center
-            .col-lg-10
-              p.lead
-                | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque rutrum pellentesque imperdiet. Nulla lacinia iaculis nulla non pulvinar. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Ut eu risus enim, ut pulvinar lectus. Sed hendrerit nibh metus.
-            .col-lg-2
-              a.btn.btn-lg.btn-primary(href='#') Contact Us!
-          hr
-          .featured-boxes
-            .row
-              .col-lg-3.col-sm-6
-                .featured-box.featured-box-primary.featured-box-effect-1.mt-0.mt-lg-5
-                  .box-content
-                    i.icon-featured.fas.fa-user
-                    h4.text-uppercase Loved by Customers
-                    p Donec id elit non mi porta gravida at eget metus. Fusce dapibus.
-                    p
-                      a.lnk-primary.learn-more(href='/')
-                        | Learn More 
-                        i.fas.fa-angle-right
-              .col-lg-3.col-sm-6
-                .featured-box.featured-box-secondary.featured-box-effect-1.mt-0.mt-lg-5
-                  .box-content
-                    i.icon-featured.fas.fa-book
-                    h4.text-uppercase Well Documented
-                    p Donec id elit non mi porta gravida at eget metus. Fusce dapibus.
-                    p
-                      a.lnk-secondary.learn-more(href='/')
-                        | Learn more 
-                        i.fas.fa-angle-right
-              .col-lg-3.col-sm-6
-                .featured-box.featured-box-tertiary.featured-box-effect-1.mt-0.mt-lg-5
-                  .box-content
-                    i.icon-featured.fas.fa-trophy
-                    h4.text-uppercase Winner
-                    p Donec id elit non mi porta gravida at eget metus. Fusce dapibus.
-                    p
-                      a.lnk-tertiary.learn-more(href='/')
-                        | Learn more 
-                        i.fas.fa-angle-right
-              .col-lg-3.col-sm-6
-                .featured-box.featured-box-quaternary.featured-box-effect-1.mt-0.mt-lg-5
-                  .box-content
-                    i.icon-featured.fas.fa-cogs
-                    h4.text-uppercase Customizable
-                    p Donec id elit non mi porta gravida at eget metus. Fusce dapibus. 
-                    p
-                      a.lnk-quaternary.learn-more(href='/')
-                        | Learn more 
-                        i.fas.fa-angle-right
-          hr
-          .row.pt-4
-            .col-lg-8
-              h2
-                | Our 
-                strong Features
+          .divider.divider-tertiary
+            i.fas.fa-chevron-down
+          .row.mb-4
+            .col-lg-12.text-center
+              h2.mb-5
+                strong Development 
+                |Services
+                
+            .col-lg-12
+              .row.pt-2.clearfix
+                .col-lg-6
+                  .feature-box.feature-box-style-2.reverse.appear-animation(data-appear-animation='fadeInLeft', data-appear-animation-delay='0')
+                    .feature-box-icon
+                      i.icons.text-color-quaternary(class=Services[0].icon_class)
+                    .feature-box-info
+                      h4.mb-2= Services[0].title
+                      p.mb-4= Services[0].description
+
+                .col-lg-6
+                  .feature-box.feature-box-style-2.appear-animation(data-appear-animation='fadeInRight', data-appear-animation-delay='0')
+                    .feature-box-icon
+                      i.icons.text-color-quaternary(class=Services[1].icon_class)
+                    .feature-box-info
+                      h4.mb-2= Services[1].title
+                      p.mb-4= Services[1].description
+                        
               .row
-                .col-sm-6
-                  .feature-box
+                .col-lg-6
+                  .feature-box.feature-box-style-2.reverse.appear-animation(data-appear-animation='fadeInLeft', data-appear-animation-delay='300')
                     .feature-box-icon
-                      i.fas.fa-users
+                      i.icons.text-color-quaternary(class=Services[2].icon_class)
                     .feature-box-info
-                      h4.heading-primary.mb-0 Customer Support
-                      p.mb-4 Lorem ipsum dolor sit amet, consectetur.
-                  .feature-box
+                      h4.mb-2= Services[2].title
+                      p.mb-4= Services[2].description
+                .col-lg-6
+                  .feature-box.feature-box-style-2.appear-animation(data-appear-animation='fadeInRight', data-appear-animation-delay='300')
                     .feature-box-icon
-                      i.fas.fa-file
+                      i.icons.text-color-quaternary(class=Services[3].icon_class)
                     .feature-box-info
-                      h4.heading-primary.mb-0 HTML5 / CSS3 / JS
-                      p.mb-4 Lorem ipsum dolor sit amet,.
-                  .feature-box
-                    .feature-box-icon
-                      i.fab.fa-google-plus-g
-                    .feature-box-info
-                      h4.heading-primary.mb-0 500+ Google Fonts
-                      p.mb-4 Lorem ipsum dolor sit amet, consectetur.
-                  .feature-box
-                    .feature-box-icon
-                      i.fas.fa-adjust
-                    .feature-box-info
-                      h4.heading-primary.mb-0 Colors
-                      p.mb-4 Lorem ipsum dolor sit amet, consectetur.
-                .col-sm-6
-                  .feature-box
-                    .feature-box-icon
-                      i.fas.fa-film
-                    .feature-box-info
-                      h4.heading-primary.mb-0 Sliders
-                      p.mb-4 Lorem ipsum dolor sit amet, consectetur.
-                  .feature-box
-                    .feature-box-icon
-                      i.fas.fa-user
-                    .feature-box-info
-                      h4.heading-primary.mb-0 Icons
-                      p.mb-4 Lorem ipsum dolor sit amet, consectetur.
-                  .feature-box
-                    .feature-box-icon
-                      i.fas.fa-bars
-                    .feature-box-info
-                      h4.heading-primary.mb-0 Buttons
-                      p.mb-4 Lorem ipsum dolor sit, consectetur.
-                  .feature-box
-                    .feature-box-icon
-                      i.fas.fa-desktop
-                    .feature-box-info
-                      h4.heading-primary.mb-0 Lightbox
-                      p.mb-4 Lorem sit amet, consectetur.
-            .col-lg-4
-              h2 and more...
-              #accordion.accordion
-                .card.card-default
-                  .card-header
-                    h4.card-title.m-0
-                      a.accordion-toggle(data-toggle='collapse', data-parent='#accordion', href='#collapseOne')
-                        i.fas.fa-dollar-sign
-                        | 												Pricing Tables
-                  #collapseOne.collapse.show
-                    .card-body
-                      | Donec tellus massa, tristique sit amet condim vel, facilisis quis sapien. Praesent id enim sit amet odio vulputate eleifend in in tortor.
-                .card.card-default
-                  .card-header
-                    h4.card-title.m-0
-                      a.accordion-toggle(data-toggle='collapse', data-parent='#accordion', href='#collapseTwo')
-                        i.fas.fa-comment
-                        | 												Contact Forms
-                  #collapseTwo.collapse
-                    .card-body
-                      | Donec tellus massa, tristique sit amet condimentum vel, facilisis quis sapien.
-                .card.card-default
-                  .card-header
-                    h4.card-title.m-0
-                      a.accordion-toggle(data-toggle='collapse', data-parent='#accordion', href='#collapseThree')
-                        i.fas.fa-laptop
-                        | 												Portfolio Pages
-                  #collapseThree.collapse
-                    .card-body
-                      | Donec tellus massa, tristique sit amet condimentum vel, facilisis quis sapien.
-          hr.tall
-          .row.justify-content-around.mb-5
-            .col-sm-7
-              h2
-                | Premium 
-                strong Features
-              p.lead
-                | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur imperdiet hendrerit volutpat. Sed in nunc nec ligula consectetur mollis in vel justo. Vestibulum ante ipsum primis in faucibus orci.
-              p.mt-4
-                | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur imperdiet hendrerit volutpat. Sed in nunc nec ligula consectetur mollis in vel justo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Praesent scelerisque volutpat turpis, eu hendrerit enim scel.
-            .col-sm-4.mt-4
-              img.img-fluid.mt-5(src='img/device.png', alt='')
+                      h4.mb-2= Services[3].title
+                      p.mb-4= Services[3].description
+            .col-lg-12.text-center.mt-5.mb-2
+              a.btn.btn-primary.mr-1.mb-2.appear-animation(href='#', data-appear-animation='fadeInUp', data-appear-animation-delay='900') View More
+        section.section.section-primary.text-center.text-lg-left.pb-0.pb-lg-5.pb-xl-0.mb-0
+          .container
+            .row
+              .col-lg-7
+                h2.text-light
+                  strong About
+                  |  Us
+                p.text-light= About.homepage
+                a.btn.btn-secondary.mt-4.mb-5.mb-lg-2(href='#') View More
+              .col-lg-4.ml-auto.my-auto
+                img.img-fluid.appear-animation(src='img/porto-preview-1.jpg', alt='', data-appear-animation='fadeInUp')
+        .container
+          .row
+            .col-lg-12.text-center.mb-5
+              h2.mt-5
+                | Our 
+                strong Projects
+              .owl-carousel.owl-theme.mb-0(data-plugin-options="{'items': 4, 'margin': 0, 'loop': false}")
+                div
+                  a(href='portfolio-single.html')
+                    img.img-fluid(src='img/projects/project-9.jpg', alt='')
+                div
+                  a(href='portfolio-single.html')
+                    img.img-fluid(src='img/projects/project-12.jpg', alt='')
+                div
+                  a(href='portfolio-single.html')
+                    img.img-fluid(src='img/projects/project-11.jpg', alt='')
+                div
+                  a(href='portfolio-single.html')
+                    img.img-fluid(src='img/projects/project-8.jpg', alt='')
+                div
+                  a(href='portfolio-single.html')
+                    img.img-fluid(src='img/projects/project-9.jpg', alt='')
+                div
+                  a(href='portfolio-single.html')
+                    img.img-fluid(src='img/projects/project-12.jpg', alt='')
+        section.section.section-primary
+          .container
+            .row
+              .col-lg-6
+                h2.mb-1
+                  | Our 
+                  strong Blog
+                .row
+                  .col-lg-6
+                    .recent-posts.mt-4
+                      article.post
+                        .date
+                          span.day 15
+                          span.month.background-color-secondary Jan
+                        h4
+                          a.text-light(href='blog-post.html') Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        p
+                          | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec hendrerit vehicula est, in consequat libero.
+                        a.btn.btn-secondary.mt-3.mb-2.mb-lg-0(href='#') Read More
+                  .col-lg-6
+                    .recent-posts.mt-4
+                      article.post
+                        .date
+                          span.day 15
+                          span.month.background-color-secondary Jan
+                        h4
+                          a.text-light(href='blog-post.html') Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        p
+                          | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec hendrerit vehicula est, in consequat libero.
+                        a.btn.btn-secondary.mt-3.mb-5.mb-lg-0(href='#') Read More
+              .col-lg-6
+                h2.mb-1
+                  | Our 
+                  strong Stats
+                .content-grid.content-grid-dashed.mt-4.mb-4
+                  .row.content-grid-row
+                    .content-grid-item.col-lg-6.text-center.py-4
+                      .counters
+                        .counter.text-color-light
+                          strong(data-to='30000', data-append='+') 0
+                          label Happy Clients
+                    .content-grid-item.col-lg-6.text-center.py-4
+                      .counters
+                        .counter.text-color-light
+                          strong(data-to='15') 0
+                          label Years in Business
+                  .row.content-grid-row
+                    .content-grid-item.col-lg-6.text-center.py-4
+                      .counters
+                        .counter.text-color-light
+                          strong(data-to='352') 0
+                          label Cups of Coffee
+                    .content-grid-item.col-lg-6.text-center.py-4
+                      .counters
+                        .counter.text-color-light
+                          strong(data-to='178') 0
+                          label High Score
+        .container
+          .row.text-center.mt-5
+            .owl-carousel.owl-theme(data-plugin-options="{'items': 6, 'autoplay': true, 'autoplayTimeout': 3000}")
+              div
+                img.img-fluid(src='img/logos/logo-1.png', alt='')
+              div
+                img.img-fluid(src='img/logos/logo-2.png', alt='')
+              div
+                img.img-fluid(src='img/logos/logo-3.png', alt='')
+              div
+                img.img-fluid(src='img/logos/logo-4.png', alt='')
+              div
+                img.img-fluid(src='img/logos/logo-5.png', alt='')
+              div
+                img.img-fluid(src='img/logos/logo-6.png', alt='')
+              div
+                img.img-fluid(src='img/logos/logo-4.png', alt='')
+              div
+                img.img-fluid(src='img/logos/logo-2.png', alt='')
       footer#footer
         .container
           .row
@@ -804,8 +314,8 @@ html
           .container
             .row
               .col-lg-1
-                a.logo(href='index.html')
-                  img.img-fluid(alt='Porto Website Template', src='img/logo-footer.png')
+                a.logo(href='/')
+                  img.img-fluid(alt='Exoid Development', src='img/exoid-dev-logo.png')
               .col-lg-7
                 p © Copyright 2018. All Rights Reserved.
               .col-lg-4
@@ -813,8 +323,6 @@ html
                   ul
                     li
                       a(href='page-faq.html') FAQ's
-                    li
-                      a(href='sitemap.html') Sitemap
                     li
                       a(href='contact-us.html') Contact
     // Vendor
@@ -835,6 +343,9 @@ html
     script(src='vendor/vide/vide.min.js')
     // Theme Base, Components and Settings
     script(src='js/theme.js')
+    // Current Page Vendor and Views
+    script(src='vendor/rs-plugin/js/jquery.themepunch.tools.min.js')
+    script(src='vendor/rs-plugin/js/jquery.themepunch.revolution.min.js')
     // Theme Custom
     script(src='js/custom.js')
     // Theme Initialization Files
