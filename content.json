@@ -1,18 +1,34 @@
 {
 	"Navigation": [
-		{"title":"Home", "href":"/", "active":"true"},
-		{"title":"About", "href":"/about", "active":"false"},
-		{"title":"Services", "href":"/services", "active":"false"},
-		{"title":"Portfolio", "href":"/portfolio", "active":"false"}
+		{"title":"Home", "href":"/"},
+		{"title":"About", "href":"/about"},
+		{"title":"Services", "href":"/services"},
+		{"title":"Portfolio", "href":"/portfolio"}
 	],
-	"Meta": {
-		"title": "Custom Digital Development for the Modern Business",
-		"descripion": "We build custom sites for companies who want to grow their brands online and reach more customers digitally"
-	},
 	"Pages": {
+		"Home" : {
+			"title": "Custom Digital Development for the Modern Business",
+			"descripion": "We build custom sites for companies who want to grow their brands online and reach more customers digitally",
+			"headline_1": "Web Development For the",
+			"headline_highlight": "Modern",
+			"headline_2": "Business",
+			"subheadline": "Custom site development for businesses who want to grow their brands online and reach more customers digitally ",
+			"banner_header":"Want to Grow Sales Through Your Website?",
+			"banner_highlighted":"",
+			"banner_subheader":"Get a free homepage site re-design. ",
+			"Services": [
+				{"title":"Custom Development", "description":"We have the recourses and engineering expertise to design, develop, and deploy a custom, scalable site for your business. Whether large or small, we develop web solutions that are scalable, functional, and designed down to the pixel to reach your customers and drive sales. ","icon_class":"icon-screen-desktop"},
+				{"title":"UI/UX Design", "description":"Appealing visual design and ease of usability are keys to a successful and high-converting website. We know how to design sites that are functional and beautiful across both mobile and desktop.","icon_class":"icon-layers"},
+				{"title":"Mobile Development", "description":"In 2018, 52.2 percent of all website traffic worldwide is generated through mobile. Having a  fully functional and well optimized site on mobile is essential to reaching customers and staying competitive in the market.","icon_class":"icon-screen-smartphone"},
+				{"title":"Website Maintenance", "description":"We have experience with web technologies, platforms, and content management systems across the board. We can update and maintain existing sites and work with content management systems like WordPress or Drupal.","icon_class":"icon-wrench"}
+			],
+			"about": "Exoid Development is a small, custom development agency based just north of San Francisco, California. We focus on developing custom web solutions for our clients that ultimately result in increased sales and leads. We’re developers and engineers but were just as much artists and marketers. We understand the roll a website plays in the greater marketing scheme of your business. Our work combines a potent mix of art, cutting edge engineering, and marketing magic. "
+		},
 		"Services": {
 			"title":"Services: Exoid Development",
-			"description":"Services"
+			"description":"Services",
+			"header_title": "Example Title",
+			"header_subtitle": "Subtitle example here it is."
 		},
 		"About_us": {
 			"title":"Services: Exoid Development",
@@ -22,25 +38,5 @@
 			"title":"Services: Exoid Development",
 			"description":"Services"
 		}
-	},
-	"Home": {
-		"headline_1": "Web Development For the",
-		"headline_highlight": "Modern",
-		"headline_2": "Business",
-		"subheadline": "Custom site development for businesses who want to grow their brands online and reach more customers digitally ",
-		"banner_header":"Want to Grow Sales Through Your Website?",
-		"banner_highlighted":"",
-		"banner_subheader":"Get a free homepage site re-design. "
-	},
-	"Services": [
-		{"title":"Custom Development", "description":"We have the recourses and engineering expertise to design, develop, and deploy a custom, scalable site for your business. Whether large or small, we develop web solutions that are scalable, functional, and designed down to the pixel to reach your customers and drive sales. ","icon_class":"icon-screen-desktop"},
-		{"title":"UI/UX Design", "description":"Appealing visual design and ease of usability are keys to a successful and high-converting website. We know how to design sites that are functional and beautiful across both mobile and desktop.","icon_class":"icon-layers"},
-		{"title":"Mobile Development", "description":"In 2018, 52.2 percent of all website traffic worldwide is generated through mobile. Having a  fully functional and well optimized site on mobile is essential to reaching customers and staying competitive in the market.","icon_class":"icon-screen-smartphone"},
-		{"title":"Website Maintenance", "description":"We have experience with web technologies, platforms, and content management systems across the board. We can update and maintain existing sites and work with content management systems like WordPress or Drupal.","icon_class":"icon-wrench"}
-	],
-	"About": {
-		"homepage": "Exoid Development is a small, custom development agency based just north of San Francisco, California. We focus on developing custom web solutions for our clients that ultimately result in increased sales and leads. We’re developers and engineers but were just as much artists and marketers. We understand the roll a website plays in the greater marketing scheme of your business. Our work combines a potent mix of art, cutting edge engineering, and marketing magic. "
-	} 
-
-
+	}
 }

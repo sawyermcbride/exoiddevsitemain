@@ -58,3 +58,38 @@ border-radius:5px;
 .btn-primary {
     background: #0088cc !important;
 }
+.cover-overlay-2 {
+    opacity:0.8;
+    background: #0088cc;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+section.section-custom-1 {
+    margin: 0px !important;
+}
+.sub-rotate-services {
+    font: inherit;
+    color:inherit;
+    margin-right:12px;
+}
+.color-custom-word {
+    background-color:#0088cc;
+}
+.custom-color-exoid {
+    background-color: #e36159 !important;
+	border-color: #df4c43 !important;
+}
+.custom-color-blue {
+    background-color: #0088cc !important;
+	border-color: #0077b3 !important;
+}
+.margin-top-sm {
+    margin-top:8px;
+}
+section.section-box-custom {
+    width:80%;  
+    margin:0 auto;
+}

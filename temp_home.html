@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <!-- Basic-->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <title>{{Pages.Home.title}}</title>
+      <meta name="keywords" content="HTML5 Template">
+      <meta name="description" content={{Pages.Home.description}}>
+      <meta name="author" content="Sawyer McBride">
+      <!-- Favicon-->
+      <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+      <!-- Mobile Metas-->
+      <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
+      <!-- Web Fonts``-->
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800%7CShadows+Into+Light" rel="stylesheet" type="text/css">
+      <!-- Vendor CSS-->
+      <link rel="stylesheet" href="/vendor/bootstrap/css/bootstrap.min.css">
+      <link rel="stylesheet" href="/vendor/font-awesome/css/fontawesome-all.min.css">
+      <link rel="stylesheet" href="/vendor/animate/animate.min.css">
+      <link rel="stylesheet" href="/vendor/simple-line-icons/css/simple-line-icons.min.css">
+      <link rel="stylesheet" href="/vendor/owl.carousel/assets/owl.carousel.min.css">
+      <link rel="stylesheet" href="/vendor/owl.carousel/assets/owl.theme.default.min.css">
+      <link rel="stylesheet" href="/vendor/magnific-popup/magnific-popup.min.css">
+      <link rel="stylesheet" href="/css/skins/skin-corporate-7.css">
+      <!-- Theme CSS-->
+      <link rel="stylesheet" href="/css/theme.css">
+      <link rel="stylesheet" href="/css/theme-elements.css">
+      <link rel="stylesheet" href="/css/theme-blog.css">
+      <link rel="stylesheet" href="/css/theme-shop.css">
+      <!-- Current Page CSS-->
+      <link rel="stylesheet" href="/vendor/rs-plugin/css/settings.css">
+      <link rel="stylesheet" href="/vendor/rs-plugin/css/layers.css">
+      <link rel="stylesheet" href="/vendor/rs-plugin/css/navigation.css">
+      <!-- Demo CSS--><!-- Skin CSS--><!-- Theme Custom CSS-->
+      <link rel="stylesheet" href="/css/custom.css">
+      <!-- Head Libs--><script src="vendor/modernizr/modernizr.min.js"></script>
+   </head>
+   <body>
+      <div class="body">
+         <header class="header-narrow header-semi-transparent header-transparent-sticky-deactive header-transparent-bottom-border" id="header" data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': true, 'stickyStartAt': 1, 'stickySetTop': '1'}">
+            <div class="header-body">
+               <div class="header-container container">
+                  <div class="header-row">
+                     <div class="header-column">
+                        <div class="header-row">
+                           <div class="header-logo"><a href="/"><img alt="Exoid Dev" width="145" height="52" src="img/exoid-dev-logo.png"></a></div>
+                        </div>
+                     </div>
+                     <div class="header-column justify-content-end">
+                        <div class="header-row">
+                           <div class="header-nav header-nav-top-line">
+                              <div class="header-nav-main header-nav-no-arrows header-nav-main-square header-nav-main-sub-effect-1">
+                                 <nav class="collapse">
+                                    <ul class="nav nav-pills" id="mainNav">
+                                        {{#Navigation}}
+                                            <li class="main-nav"><a class="dropdown-item {{title=='Home' ? 'active' : ''}}" href={{href}}>{{title}}</a></li>
+                                        {{/Navigation}}
+                                    </ul>
+                                 </nav>
+                              </div>
+                              <button class="btn header-btn-collapse-nav" data-toggle="collapse" data-target=".header-nav-main nav"><i class="fas fa-bars"></i></button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </header>
+         <div class="main" role="main">
+            <section class="section section-secondary section-first-home">
+               <div class="cover-overlay"></div>
+               <div class="container">
+                  <div class="row">
+                     <div class="col">
+                        <div class="heading heading-border heading-bottom-border">
+                           <h1>{{Pages.Home.headline_1}} 
+                               <strong>{{Pages.Home.headline_highlight}}</strong>
+                               {{" "+Pages.Home.headline_2}}
+                            </h1>
+                        </div>
+                        <p class="mb-0">{{Pages.Home.subheadline}}</p>
+                     </div>
+                  </div>
+               </div>
+            </section>
+            <section class="call-to-action call-to-action-primary mb-5">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-sm-9 col-lg-9">
+                        <div class="call-to-action-content">
+                           <h3>{{Pages.Home.banner_header}}</h3>
+                           <p class="mb-0">{{Pages.Home.subheadline}} </p>
+                        </div>
+                     </div>
+                     <div class="col-sm-3 col-lg-3">
+                        <div class="call-to-action-btn"><a class="btn btn-light mb-2 btn-hp" href="/contact" target="_blank">Get A Free New Site Preview </a></div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+            <div class="container">
+               <div class="divider divider-tertiary"><i class="fas fa-chevron-down"></i></div>
+               <div class="row mb-4">
+                  <div class="col-lg-12 text-center">
+                     <h2 class="mb-5"><strong>Development </strong>Services</h2>
+                  </div>
+                  <div class="col-lg-12">
+                     <div class="row pt-2 clearfix">
+                        <div class="col-lg-6">
+                           <div class="feature-box feature-box-style-2 reverse appear-animation" data-appear-animation="fadeInLeft" data-appear-animation-delay="0">
+                              <div class="feature-box-icon"><i class="icons text-color-quaternary icon-screen-desktop"></i></div>
+                              <div class="feature-box-info">
+                                 <h4 class="mb-2">{{Pages.Home.Services[0].title}}</h4>
+                                 <p class="mb-4">{{Pages.Home.Services[0].description}}</p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-lg-6">
+                           <div class="feature-box feature-box-style-2 appear-animation" data-appear-animation="fadeInRight" data-appear-animation-delay="0">
+                              <div class="feature-box-icon"><i class="icons text-color-quaternary icon-layers"></i></div>
+                              <div class="feature-box-info">
+                                 <h4 class="mb-2">{{Pages.Home.Services[1].title}}</h4>
+                                 <p class="mb-4">{{Pages.Home.Services[1].description}}</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="row">
+                        <div class="col-lg-6">
+                           <div class="feature-box feature-box-style-2 reverse appear-animation" data-appear-animation="fadeInLeft" data-appear-animation-delay="300">
+                              <div class="feature-box-icon"><i class="icons text-color-quaternary icon-screen-smartphone"></i></div>
+                              <div class="feature-box-info">
+                                 <h4 class="mb-2">{{Pages.Home.Services[2].title}}</h4>
+                                 <p class="mb-4">{{Pages.Home.Services[2].description}}</p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-lg-6">
+                           <div class="feature-box feature-box-style-2 appear-animation" data-appear-animation="fadeInRight" data-appear-animation-delay="300">
+                              <div class="feature-box-icon"><i class="icons text-color-quaternary icon-wrench"></i></div>
+                              <div class="feature-box-info">
+                                 <h4 class="mb-2">{{Pages.Home.Services[3].title}}</h4>
+                                 <p class="mb-4">{{Pages.Home.Services[3].description}}</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-12 text-center mt-5 mb-2"><a class="btn btn-primary mr-1 mb-2 appear-animation" href="#" data-appear-animation="fadeInUp" data-appear-animation-delay="900">Learn More</a></div>
+               </div>
+            </div>
+            <section class="section section-primary text-center text-lg-left pb-0 pb-lg-5 pb-xl-0 mb-0">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-lg-7">
+                        <h2 class="text-light"><strong>About</strong> Us</h2>
+                        <p class="text-light">{{Pages.Home.about}}</p>
+                        <a class="btn btn-secondary mt-4 mb-5 mb-lg-2" href="#">View More</a>
+                     </div>
+                     <div class="col-lg-4 ml-auto my-auto"><img class="img-fluid appear-animation" src="img/porto-preview-1.jpg" alt="" data-appear-animation="fadeInUp"></div>
+                  </div>
+               </div>
+            </section>
+            <div class="container">
+               <div class="row">
+                  <div class="col-lg-12 text-center mb-5">
+                     <h2 class="mt-5">Our <strong>Projects</strong></h2>
+                     <div class="owl-carousel owl-theme mb-0" data-plugin-options="{'items': 4, 'margin': 0, 'loop': false}">
+                        <div><a href="portfolio-single.html"><img class="img-fluid" src="img/projects/project-9.jpg" alt=""></a></div>
+                        <div><a href="portfolio-single.html"><img class="img-fluid" src="img/projects/project-12.jpg" alt=""></a></div>
+                        <div><a href="portfolio-single.html"><img class="img-fluid" src="img/projects/project-11.jpg" alt=""></a></div>
+                        <div><a href="portfolio-single.html"><img class="img-fluid" src="img/projects/project-8.jpg" alt=""></a></div>
+                        <div><a href="portfolio-single.html"><img class="img-fluid" src="img/projects/project-9.jpg" alt=""></a></div>
+                        <div><a href="portfolio-single.html"><img class="img-fluid" src="img/projects/project-12.jpg" alt=""></a></div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <section class="section section-primary">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-lg-6">
+                        <h2 class="mb-1">Our <strong>Blog</strong></h2>
+                        <div class="row">
+                           <div class="col-lg-6">
+                              <div class="recent-posts mt-4">
+                                 <article class="post">
+                                    <div class="date"><span class="day">15</span><span class="month background-color-secondary">Jan</span></div>
+                                    <h4><a class="text-light" href="blog-post.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec hendrerit vehicula est, in consequat libero.</p>
+                                    <a class="btn btn-secondary mt-3 mb-2 mb-lg-0" href="#">Read More</a>
+                                 </article>
+                              </div>
+                           </div>
+                           <div class="col-lg-6">
+                              <div class="recent-posts mt-4">
+                                 <article class="post">
+                                    <div class="date"><span class="day">15</span><span class="month background-color-secondary">Jan</span></div>
+                                    <h4><a class="text-light" href="blog-post.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec hendrerit vehicula est, in consequat libero.</p>
+                                    <a class="btn btn-secondary mt-3 mb-5 mb-lg-0" href="#">Read More</a>
+                                 </article>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-lg-6">
+                        <h2 class="mb-1">Our <strong>Stats</strong></h2>
+                        <div class="content-grid content-grid-dashed mt-4 mb-4">
+                           <div class="row content-grid-row">
+                              <div class="content-grid-item col-lg-6 text-center py-4">
+                                 <div class="counters">
+                                    <div class="counter text-color-light"><strong data-to="30000" data-append="+">0</strong><label>Happy Clients</label></div>
+                                 </div>
+                              </div>
+                              <div class="content-grid-item col-lg-6 text-center py-4">
+                                 <div class="counters">
+                                    <div class="counter text-color-light"><strong data-to="15">0</strong><label>Years in Business</label></div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="row content-grid-row">
+                              <div class="content-grid-item col-lg-6 text-center py-4">
+                                 <div class="counters">
+                                    <div class="counter text-color-light"><strong data-to="352">0</strong><label>Cups of Coffee</label></div>
+                                 </div>
+                              </div>
+                              <div class="content-grid-item col-lg-6 text-center py-4">
+                                 <div class="counters">
+                                    <div class="counter text-color-light"><strong data-to="178">0</strong><label>High Score</label></div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+            <div class="container">
+               <div class="row text-center mt-5">
+                  <div class="owl-carousel owl-theme" data-plugin-options="{'items': 6, 'autoplay': true, 'autoplayTimeout': 3000}">
+                     <div><img class="img-fluid" src="img/logos/logo-1.png" alt=""></div>
+                     <div><img class="img-fluid" src="img/logos/logo-2.png" alt=""></div>
+                     <div><img class="img-fluid" src="img/logos/logo-3.png" alt=""></div>
+                     <div><img class="img-fluid" src="img/logos/logo-4.png" alt=""></div>
+                     <div><img class="img-fluid" src="img/logos/logo-5.png" alt=""></div>
+                     <div><img class="img-fluid" src="img/logos/logo-6.png" alt=""></div>
+                     <div><img class="img-fluid" src="img/logos/logo-4.png" alt=""></div>
+                     <div><img class="img-fluid" src="img/logos/logo-2.png" alt=""></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <footer id="footer">
+            <div class="container">
+               <div class="row">
+                  <div class="footer-ribbon"><span>Get in Touch</span></div>
+                  <div class="col-lg-3">
+                     <div class="newsletter">
+                        <h4>Newsletter</h4>
+                        <p>Keep up on our always evolving product features and technology. Enter your e-mail and subscribe to our newsletter.</p>
+                        <div class="alert alert-success d-none" id="newsletterSuccess"><strong>Success!</strong> You've been added to our email list.</div>
+                        <div class="alert alert-danger d-none" id="newsletterError"></div>
+                        <form id="newsletterForm" action="php/newsletter-subscribe.php" method="POST">
+                           <div class="input-group"><input class="form-control form-control-sm" id="newsletterEmail" placeholder="Email Address" name="newsletterEmail" type="text"><span class="input-group-append"><button class="btn btn-light" type="submit">Go!</button></span></div>
+                        </form>
+                     </div>
+                  </div>
+                  <div class="col-lg-3">
+                     <h4>Latest Tweets</h4>
+                     <div class="twitter" id="tweet" data-plugin-tweets="" data-plugin-options="{'username': '', 'count': 2}">
+                        <p>Please wait...</p>
+                     </div>
+                  </div>
+                  <div class="col-lg-4">
+                     <div class="contact-details">
+                        <h4>Contact Us</h4>
+                        <ul class="contact">
+                           <li>
+                              <p><i class="fas fa-map-marker-alt"></i><strong>Address:</strong> 1234 Street Name, City Name, United States</p>
+                           </li>
+                           <li>
+                              <p><i class="fas fa-phone"></i><strong>Phone:</strong> (123) 456-789</p>
+                           </li>
+                           <li>
+                              <p><i class="far fa-envelope"></i><strong>Email:</strong><a href="mailto:mail@example.com">mail@example.com</a></p>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="col-lg-2">
+                     <h4>Follow Us</h4>
+                     <ul class="social-icons">
+                        <li class="social-icons-facebook"><a href="http://www.facebook.com/" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                        <li class="social-icons-twitter"><a href="http://www.twitter.com/" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+                        <li class="social-icons-linkedin"><a href="http://www.linkedin.com/" target="_blank" title="Linkedin"><i class="fab fa-linkedin-in"></i></a></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+            <div class="footer-copyright">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-lg-1"><a class="logo" href="/"><img class="img-fluid" alt="Exoid Development" src="img/exoid-dev-logo.png"></a></div>
+                     <div class="col-lg-7">
+                        <p>© Copyright 2018. All Rights Reserved.</p>
+                     </div>
+                     <div class="col-lg-4">
+                        <nav id="sub-menu">
+                           <ul>
+                              <li><a href="page-faq.html">FAQ's</a></li>
+                              <li><a href="contact-us.html">Contact</a></li>
+                           </ul>
+                        </nav>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </footer>
+      </div>
+      <!-- Vendor--><script src="vendor/jquery/jquery.min.js"></script><script src="vendor/jquery.appear/jquery.appear.min.js"></script><script src="vendor/jquery.easing/jquery.easing.min.js"></script><script src="vendor/jquery-cookie/jquery-cookie.min.js"></script><script src="vendor/popper/umd/popper.min.js"></script><script src="vendor/bootstrap/js/bootstrap.min.js"></script><script src="vendor/common/common.min.js"></script><script src="vendor/jquery.validation/jquery.validation.min.js"></script><script src="vendor/jquery.easy-pie-chart/jquery.easy-pie-chart.min.js"></script><script src="vendor/jquery.gmap/jquery.gmap.min.js"></script><script src="vendor/jquery.lazyload/jquery.lazyload.min.js"></script><script src="vendor/isotope/jquery.isotope.min.js"></script><script src="vendor/owl.carousel/owl.carousel.min.js"></script><script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script><script src="vendor/vide/vide.min.js"></script><!-- Theme Base, Components and Settings--><script src="js/theme.js"></script><!-- Current Page Vendor and Views--><script src="vendor/rs-plugin/js/jquery.themepunch.tools.min.js"></script><script src="vendor/rs-plugin/js/jquery.themepunch.revolution.min.js"></script><!-- Theme Custom--><script src="js/custom.js"></script><!-- Theme Initialization Files--><script src="js/theme.init.js"></script><!--Google Analytics: Change UA-XXXXX-X to be your site's ID. Go to http://www.google.com/analytics/ for more information.
+         <script>
+         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+         m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+         })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+         ga('create', 'UA-12345678-1', 'auto');
+         ga('send', 'pageview');
+         </script>-->
+   </body>
+</html>

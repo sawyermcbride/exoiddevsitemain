@@ -1,17 +1,19 @@
 const express = require('express');
 const app = express();
 const path = require('path');
-
+const mustacheExpress = require('mustache-express');
 const rgex = /.*\.[A-Za-z]+/;
-const data = 
-app.set('view engine', 'pug')
+const content = require('./content.json');
+
+app.engine('mustache', mustacheExpress());
+app.set('view engine', 'mustache')
 app.set('views', path.join(__dirname, '/pages'));
 
 
 console.log('app running');
 
 app.get('/', (req,res)=> {
-    res.render('home', require('./content.json'));
+    res.render('home', content);
 });
 
 //regex checks if the url is a file request, if so it passes it onto the next middleware
@@ -20,7 +22,7 @@ app.use((req, res, next) => {
     if(rgex.test(req.path.trim())) {
         next();
     } else {
-        res.render(req.path, JSON.parse(require('./content.json')));
+        res.render(req.path.substring(1, req.path.length), content);
     }
 });
 
